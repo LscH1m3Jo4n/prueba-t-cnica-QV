@@ -17,6 +17,8 @@
 </head>
 <body>
     <header>
+        <!--atributo header, en el cual se encuentran el respectivo logo, la barra de navegacion, algunas opciones de redirrecion
+             para una mejor gestion de tiempo, la unica funcional es la de Ruta de Formacion .NET, tal y como recomienda el PDF-->
         <div class="logo">
             <img src="/img/Logo_Izyacademy2.png" class="logo" alt="QvVision">
         </div>
@@ -39,12 +41,14 @@
         <img src="/img/Search_Icon.png" class="search_icon" alt="Search_Icon">
     </header>
     <section>
+        <!--atributo section en el cual se implementa el texto del header, mediante css se le da la posicion que queremos-->
         <p>
             <h3 class="tittle">Continúa tu formación con IzyAcademy</h3>
             <h4 class="subtittle"> Te ofrecemos una experiencia de aprendizaje basada en la formación de proyectos, <br>
                 apoyada en el uso de recursos interactivos para que tu aprendizaje sea efectivo</h4>
         </p>
     </section>
+    <!-- En esta seccion, mostramos unas cartas las cuales nos enseñan los cursos que hay en la academia-->
     <h3 class="card_tittle"> Aprende a construir</h3>
     <div class="container">
         <div class="card">
@@ -78,13 +82,15 @@
         <p class="tittle_parallax"> COMIENZA TU VIAJE PARA CONVERTIRTE EN DESARROLLADOR </p>
     </div>
     <footer class="footer">
+        <!-- En el footer, esta tal cual como lo requeria el PDF, con sus datos similares, respetando las negritas, titulos
+        entre otros, iconos totalmente funcionales con las redes de la academia-->
         <div class="footer_container">
             <div class="footer_row">
                 <div class="qv_links">
                     <h4>Contáctanos</h4>
                     <ul>
-                        <li><p>E-mail : comercial@qvision.us</p></li>
-                        <li><p>WhatsApp +300 255 02 65</p></li>
+                        <li><p id="mblost">E-mail : comercial@qvision.us</p></li>
+                        <li><p id="mblost">WhatsApp +300 255 02 65</p></li>
                         <li><p>Comunicate con nostros</p></li>
                     </ul>
                 </div>
@@ -126,7 +132,7 @@
                 <div class="qv_links">
                     <h4>Soporte</h4>
                     <ul>
-                        <li><p>Si tienes inconvenientes o dudas, contáctanos al correo</p></li>
+                        <li><p id="mblost">Si tienes inconvenientes o dudas, contáctanos al correo</p></li>
                         <li><p>izyacademy@qvision.us</p></li>
                     </ul>
                 </div>
@@ -142,6 +148,9 @@
                 </div>
                 <div class="qv_linked">
                     <div class="social_links">
+                        <!-- Mediante el link que hay en el atributo head, el cual nos linkea a la pagina cdnjs, podemos crear iconos de las redes sociales, y con un a href="" podemos vincular el link de las mismas
+                         al atributo a, le podemos agregar la condicion targer="" el cual, con el elemento _blank, le indicamos al aplicativo que ese link que abra, sera en una nueva pestaña, lo que permite seguir
+                        navegando en la pestaña de la-->
                         <a href="https://www.facebook.com/izyacademyqv" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://twitter.com/izy_academy" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.instagram.com/izy_academy/" target="_blank"><i class="fab fa-instagram"></i></a>

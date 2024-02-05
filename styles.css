@@ -286,6 +286,7 @@ section{
     font-family: 'Nunito', sans-serif;
     color: #1D3A6C;
     margin-top: 15%;
+    margin-left: 150px;
     margin-bottom: 5%;
 }
 .notice_card img{
@@ -339,4 +340,97 @@ section{
 .notice_card figure{
     display:inline-block;
     width: 50%;
+}
+.aliade_tittle{
+    font-size: 36px;
+    font-family: 'Nunito', sans-serif;
+    color: #1D3A6C;
+    margin-bottom: 100px;
+    margin-top: 45px;
+}
+.aliade_subtittle{
+    font-family: 'Nunito', sans-serif;
+    color: #1D3A6C;
+    font-size: 26px;   
+    margin-bottom: 150px;
+}
+.imgs_aliade{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.imgs_elements{
+    transition: 0.5s;
+    object-fit: cover;
+}
+.imgs_elements:hover{
+    transform: scale(1.2);
+}
+.imgs_elements{
+    flex: 1 0 auto;
+    margin: 0 50px;
+    top: 50px;
+    width: 500px;
+    height: 500px;
+}
+
+.login_form{
+    width: 550px;
+    height: 460px;
+    margin: auto; 
+    margin-top: 180px;
+    border-top: 5px;
+    border-radius: 10px;
+    border-bottom: 15px;
+    padding: 40px 40px;
+}
+.form_imag{
+    position: absolute;
+    max-width: 720px;
+    left: 24%;
+    bottom: 15%;
+    width: 15%;
+    width: auto;
+}
+.form_title{
+    font-family: 'Nunito', sans-serif;
+    color: #1D3A6C;
+    font-size: 26px;  
+    margin-bottom: 25px;; 
+}
+.input_form{
+    position: relative;
+    margin-top: 1px;
+    margin-left: 96px;
+}
+.input_form input{
+    width: 350px;
+    height: 50%;
+    padding-right: 330px;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    border: 2px solid #8f8f8f;
+    margin: 15px;
+}
+.input_form label{
+    position: absolute;
+    bottom: 45px;
+}
+.verification_form button{
+    margin-bottom: 35px;
+    color: #ffffff;
+    background-color: #1D3A6C;
+    opacity: 0.6;
+    width: 350px;
+    height: 40px;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+.verification_form button:hover{
+    background-color: #1D3A6C;
+    opacity: 1;
+}
+.verification_form{
+    padding-left: 110px;
+    font-size: 0.95rem;
 }

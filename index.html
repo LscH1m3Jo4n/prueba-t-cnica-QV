@@ -17,6 +17,8 @@
 </head>
 <body>
     <header>
+        <!--atributo header, en el cual se encuentran el respectivo logo, la barra de navegacion, algunas opciones de redirrecion
+             para una mejor gestion de tiempo, la unica funcional es la de Ruta de Formacion .NET, tal y como recomienda el PDF-->
         <div class="logo">
             <img src="/img/Logo_Izyacademy2.png" class="logo" alt="QvVision">
         </div>
@@ -40,12 +42,14 @@
         <img src="/img/Search_Icon.png" class="search_icon" alt="Search_Icon">
     </header>
     <section>
+        <!--atributo section en el cual se implementa el texto del header, mediante css se le da la posicion que queremos-->
         <p>
             <h3 class="tittle">Continúa tu formación con IzyAcademy</h3>
             <h4 class="subtittle"> Te ofrecemos una experiencia de aprendizaje basada en la formación de proyectos, <br>
                 apoyada en el uso de recursos interactivos para que tu aprendizaje sea efectivo</h4>
         </p>
     </section>
+    <!--A partir de esta linea de codigo es parte de la seccion de noticias, mediante css intente darle la forma de grid mediante display: gird; pero me falta mejorarlo mas-->
     <h3 class="notice_tittle">Novedades</h3>
     <div class="notice_container">
         <div class="notice_card">
@@ -94,7 +98,70 @@
             </figure>
         </div>
     </div>
+    <section>
+    <!-- En esta seccion esta el apartado de los aliados, un scroll totalmente funcional, con el detalle de zoom que requerian en el PDF-->
+        <p>
+            <h3 class="aliade_tittle">Aliados</h3>
+            <h4 class="aliade_subtittle">Nuestros entretenimientos, procesos formativos y certificaciones cuentan con el respaldo de empresas que confian en nosotros</h4>
+        </p>
+        <div class="imgs_aliade">
+            <div class="imgs_elements"> <img src="/img/Aliados/Ali_Arctirura.png" alt="Arctirura" title="Arctirura"></div>
+            <div class="imgs_elements"> <img src="/img/Aliados/Ali_Brightest.png" alt="Brightest" title="Brightest"></div>
+            <div class="imgs_elements"> <img src="/img/Aliados/Ali_CertiProf.jpg" alt="CertiProf" title="CertiProf"></div>
+            <div class="imgs_elements"> <img src="/img/Aliados/Ali_Credly.jpg" alt="Credly" title="Credly"></div>
+            <div class="imgs_elements"> <img src="/img/Aliados/Ali_Formarte.png" alt="Formarte" title="Formarte"></div>
+            <div class="imgs_elements"> <img src="/img/Aliados/Ali_InterSoftware.jpg" alt="InterSoftware" title="InterSoftware"></div>
+            <div class="imgs_elements"> <img src="/img/Aliados/Ali_ScrumStudy.jpg" alt="ScrumStudy" title="ScrumStudy"></div>
+            <div class="imgs_elements"> <img src="/img/Aliados/Ali_Sena.png" alt="Sena" title="Sena"></div>
+
+        </div>
+    </section>
+    <section>
+    <!-- En esta seccion, se encuentra el formulario de registro de usuarios, por el momento es parte del FrontEnd del mismo, por temas de tiempos, no pude realizar la parte de BackEnd, aunque me hubiera gusta, algunos atributos ya estan listos para ser enlazados en el BackEnd, mediante PHP
+          ejemplo, form: method= "post", en el cual usamos el metodo post, para obtener los datos y mandar el requerimiento al servidor-->
+        <div class="login_form">
+            <div class="form_imag">
+                <img src="img/Form_QvVision.png" alt="Login_Img">
+            </div>
+            <div class="form_title">
+                <h3>Regístrate</h3>
+            </div>
+            <form method="post" action="#">
+                <div class="input_form">
+                    <label for="input">Nombre</label>
+                    <input type="text"/>
+                </div>
+                <div class="input_form">
+                    <label for="input">Apellidos</label>
+                    <input type="text"/>                    
+                </div>
+                <div class="input_form">
+                    <label for="input">Correo Electronico</label>
+                    <input type="text"/>
+                </div>
+                <div class="input_form">
+                    <label for="input">Contraseña</label>
+                    <input type="password"/>
+                </div>
+                <div class="input_form">
+                    <label for="input">Confirmar contraseña</label>
+                    <input type="password"/>
+                </div>
+                <div class="verification_form">
+                    <input type="checkbox"/>
+                    <label for="input">Acepto <b>términos y condiciones</b></label>
+                </div>
+                <div class="verification_form">
+                    <input type="checkbox"/>
+                    <label for="input">Acepto <b>Politica de tratamiento de datos </b></label>
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <footer class="footer">
+    <!-- En el footer, esta tal cual como lo requeria el PDF, con sus datos similares, respetando las negritas, titulos
+        entre otros, iconos totalmente funcionales con las redes de la academia-->
         <div class="footer_container">
             <div class="footer_row">
                 <div class="qv_links">
@@ -159,6 +226,9 @@
                 </div>
                 <div class="qv_linked">
                     <div class="social_links">
+                    <!-- Mediante el link que hay en el atributo head, el cual nos linkea a la pagina cdnjs, podemos crear iconos de las redes sociales, y con un a href="" podemos vincular el link de las mismas
+                         al atributo a, le podemos agregar la condicion targer="" el cual, con el elemento _blank, le indicamos al aplicativo que ese link que abra, sera en una nueva pestaña, lo que permite seguir
+                        navegando en la pestaña de la-->
                         <a href="https://www.facebook.com/izyacademyqv" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://twitter.com/izy_academy" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.instagram.com/izy_academy/" target="_blank"><i class="fab fa-instagram"></i></a>
