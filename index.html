@@ -126,33 +126,54 @@
             <div class="form_title">
                 <h3>Regístrate</h3>
             </div>
-            <form method="post" action="#">
+            <form method="post" action="mysql.php">
                 <div class="input_form">
                     <label for="input">Nombre</label>
-                    <input type="text"/>
+                    <input type="text" name="name"/>
                 </div>
                 <div class="input_form">
                     <label for="input">Apellidos</label>
-                    <input type="text"/>                    
+                    <input type="text" name="lastname"/>                    
                 </div>
                 <div class="input_form">
                     <label for="input">Correo Electronico</label>
-                    <input type="text"/>
+                    <input type="text" name="email"/>
                 </div>
                 <div class="input_form">
                     <label for="input">Contraseña</label>
-                    <input type="password"/>
+                    <input type="password" name="password"/>
                 </div>
                 <div class="input_form">
                     <label for="input">Confirmar contraseña</label>
                     <input type="password"/>
                 </div>
                 <div class="verification_form">
-                    <input type="checkbox"/>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            // Obtener los checkboxes y el botón
+                            var checkbox_form1 = document.getElementById("checkbox_form1");
+                            var checkbox_form2 = document.getElementById("checkbox_form2");
+                            var button = document.querySelector("button");
+                    
+                            // Agregar event listener a los checkboxes
+                            checkbox_form1.addEventListener("change", updateButtonOpacity);
+                            checkbox_form2.addEventListener("change", updateButtonOpacity);
+                    
+                            // Función para actualizar la opacidad del botón
+                            function updateButtonOpacity() {
+                                if (checkbox_form1.checked && checkbox_form2.checked) {
+                                    button.style.opacity = 1;
+                                } else {
+                                    button.style.opacity = 0.5;
+                                }
+                            }
+                        });
+                    </script>
+                    <input type="checkbox" id="checkbox_form1"/>
                     <label for="input">Acepto <b>términos y condiciones</b></label>
                 </div>
                 <div class="verification_form">
-                    <input type="checkbox"/>
+                    <input type="checkbox" id="checkbox_form2" />
                     <label for="input">Acepto <b>Politica de tratamiento de datos </b></label>
                     <button type="submit">Registrarse</button>
                 </div>

@@ -352,7 +352,7 @@ section{
     font-family: 'Nunito', sans-serif;
     color: #1D3A6C;
     font-size: 26px;   
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
 .imgs_aliade{
     display: flex;
@@ -369,7 +369,7 @@ section{
 .imgs_elements{
     flex: 1 0 auto;
     margin: 0 50px;
-    top: 50px;
+    top: 20px;
     width: 500px;
     height: 500px;
 }
@@ -420,14 +420,13 @@ section{
     margin-bottom: 35px;
     color: #ffffff;
     background-color: #1D3A6C;
-    opacity: 0.6;
     width: 350px;
     height: 40px;
+    opacity: 0.5;
     margin-top: 25px;
     margin-right: 50px;
 }
-.verification_form button:hover{
-    background-color: #1D3A6C;
+.verification_form input:checked + label + button{
     opacity: 1;
 }
 .verification_form{
